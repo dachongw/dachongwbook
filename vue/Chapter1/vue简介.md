@@ -69,3 +69,20 @@ v-for
 
         `var index = this.arrs.indexOf(oldArr)
         arrs.splice(index, 1)`
+
+## 方法与事件
+1. 事件修饰符
+  1. @click.stop="yyy" 阻止事件冒泡
+  2. <a href="www.baidu.com" @click.prevent="yyy">去百度</a> 阻止事件的默认行为
+2. 按键修饰符
+  1. <input @keyup.enter="yyy"></input>
+  2. 常见按键别名：enter, tab, delete, esc, space, up, down, left, right
+
+## 表单控件绑定
+1. 失去焦点才同步数据：
+  1. input 添加 lazy 属性
+2. 延迟1s才同步数据：
+  1. input 添加 debounce="1000"  
+
+## 过渡
+1. 需要好好研究一下
